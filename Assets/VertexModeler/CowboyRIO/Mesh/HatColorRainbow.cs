@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class HatColorRainbow : MonoBehaviour
 {
-    public Renderer hatRenderer;
-    public float speed = 1f;
+    public Renderer hatRenderer; //
+    public float speed = 1f; 
 
     private Material hatMaterial;
     private float hue = 0f;
