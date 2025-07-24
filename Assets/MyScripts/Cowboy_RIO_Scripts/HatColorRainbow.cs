@@ -1,9 +1,10 @@
 using UnityEngine;
+using System.Collections;
 
 public class HatColorRainbow : MonoBehaviour
 {
-    public Renderer hatRenderer; //
-    public float speed = 1f; 
+    [SerializeField] private Renderer hatRenderer;
+    private float speed = 1f;
 
     private Material hatMaterial;
     private float hue = 0f;
@@ -16,12 +17,11 @@ public class HatColorRainbow : MonoBehaviour
             return;
         }
 
-       
         hatMaterial = hatRenderer.material;
         StartCoroutine(Rainbow());
     }
 
-    System.Collections.IEnumerator Rainbow()
+    IEnumerator Rainbow()
     {
         while (true)
         {
