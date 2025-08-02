@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: d4b921bce2563424a9bb33d5c85a4fad
+  productGUID: 911ba095323a94695a5113452787c1dc
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Unity_r_d
+  productName: New project
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -816,7 +816,8 @@ PlayerSettings:
   webGLWebAssemblyBigInt: 0
   webGLCloseOnQuit: 0
   webWasm2023: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Standalone: DREAMTECK_SPLINES
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -852,14 +853,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Unity_r_d
+  metroPackageName: New project
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Unity_r_d
+  metroApplicationDescription: New project
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -930,10 +931,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 17494f32-df66-4ff5-8561-7d110f6c25fb
+  cloudProjectId: abfe00b3-ef4f-450e-b8bb-4ab78e87a25d
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Unity_r_d 2025-07-14_10-18-40
+  projectName: New project
   organizationId: unity_05da87ad06bc13b2b1a1
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
