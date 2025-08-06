@@ -633,7 +633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f36dbc26dfda4ed8ac25f3e78d5d150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinPrefab: {fileID: 53972012717379157, guid: 0f50703abc621e54f948ddc5bb146f25, type: 3}
+  coinPrefab: {fileID: 3129200342344496425, guid: 3e29573f06c0a7e4fa986fff41de17af, type: 3}
   coinCount: 3
   areaSize: {x: 10, y: 0, z: 20}
   areaOffset: {x: 0, y: 1, z: 0}
