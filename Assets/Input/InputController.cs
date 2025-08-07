@@ -14,19 +14,21 @@ namespace Controllers.Input
         public event Action<Vector2> MovementReceived;
         public event Action MovementCanceled;
         public event Action MenuButtonPressed;
+        public event Action JumpStarted;
 
         public InputController()
         {
             _inputActions = new Controller();
             _inputActions.Enable();
             SubscribeEvents();
-        }       
+        }
 
         private void SubscribeEvents()
         {
             _inputActions.Default.Movement.performed += OnMovementPerformed;
             _inputActions.Default.Movement.canceled += OnMovementCanceled;
             _inputActions.Default.MenuButton.performed += OnMenuPressed;
+            _inputActions.Default.Jump.performed += OnJumpPressed;
         }
 
         private void OnMovementPerformed(InputAction.CallbackContext context)
@@ -44,11 +46,17 @@ namespace Controllers.Input
             MenuButtonPressed?.Invoke();
         }
         
+        private void OnJumpPressed(InputAction.CallbackContext context)
+        {
+            JumpStarted?.Invoke();
+        }
+
         public void Dispose()
         {
             _inputActions.Default.Movement.performed -= OnMovementPerformed;
             _inputActions.Default.Movement.canceled -= OnMovementCanceled;
             _inputActions.Default.MenuButton.performed -= OnMenuPressed;
+            _inputActions.Default.Jump.performed -= OnJumpPressed;
         }
     }
 }
